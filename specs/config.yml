@@ -1,0 +1,134 @@
+provider:
+  name: topologies
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/topologies.eda.nokia.com
+      method: GET
+
+  deviation_overlay:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}
+      method: GET
+
+  deviation_overlay_list:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays
+      method: GET
+
+  lldp_overlay:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}
+      method: GET
+
+  lldp_overlay_list:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1
+      method: GET
+
+  topology:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}
+      method: GET
+
+  topology_grouping:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}
+      method: GET
+
+  topology_grouping_list:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings
+      method: GET
+
+  topology_list:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies
+      method: GET
+
+  traffic_rate_overlay:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}
+      method: GET
+
+  traffic_rate_overlay_list:
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays
+      method: GET
+
+resources:
+  deviation_overlay:
+    create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays
+      method: POST
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}
+      method: GET
+    update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}
+      method: PUT
+    delete:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}
+      method: DELETE
+
+  lldp_overlay:
+    create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays
+      method: POST
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}
+      method: GET
+    update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}
+      method: PUT
+    delete:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}
+      method: DELETE
+
+  topology:
+    create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies
+      method: POST
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}
+      method: GET
+    update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}
+      method: PUT
+    delete:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}
+      method: DELETE
+
+  topology_grouping:
+    create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings
+      method: POST
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}
+      method: GET
+    update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}
+      method: PUT
+    delete:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}
+      method: DELETE
+
+  traffic_rate_overlay:
+    create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays
+      method: POST
+    read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}
+      method: GET
+    update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}
+      method: PUT
+    delete:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}
+      method: DELETE
