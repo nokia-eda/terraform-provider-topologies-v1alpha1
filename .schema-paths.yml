@@ -3,6 +3,40 @@ app_group:
       path: /apps/topologies.eda.nokia.com
       method: GET
 
+intent_targets:
+  - read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}/_targets
+      method: GET
+
+k8_s_topology_request:
+  - create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}/_topology
+      method: POST
+
 patch:
   - update:
       path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}
@@ -81,6 +115,16 @@ ui_result:
       path: /apps/topologies.eda.nokia.com/v1alpha1/_ui/{pathname}
       method: GET
 
+workflow_get_inputs_resp_elem:
+  - read:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}/_input
+      method: GET
+
+workflow_input_data:
+  - update:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}/_input
+      method: PUT
+
 com.nokia.eda.topologies.v1alpha1.deviation_overlay:
   - create:
       path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays
@@ -127,6 +171,22 @@ com.nokia.eda.topologies.v1alpha1.lldp_overlay_list:
 com.nokia.eda.topologies.v1alpha1.lldp_overlay_deleted_resources:
   - read:
       path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/_deleted
+      method: GET
+
+com.nokia.eda.topologies.v1alpha1.network_topology:
+  - create:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies
+      method: POST
+  - read:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}
+      method: GET
+
+com.nokia.eda.topologies.v1alpha1.network_topology_list:
+  - read:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies
+      method: GET
+  - read:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/networktopologies
       method: GET
 
 com.nokia.eda.topologies.v1alpha1.topology:
@@ -201,39 +261,71 @@ com.nokia.eda.topologies.v1alpha1.traffic_rate_overlay_deleted_resources:
       path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/_deleted
       method: GET
 
-totalPaths: 28
-totalSchemas: 53
-usedSchemas: 22
-unusedSchemas: 31
+totalPaths: 41
+totalSchemas: 91
+usedSchemas: 28
+unusedSchemas: 63
 unusedSchemaList:
   - AppGroupVersion
   - ErrorIndex
   - ErrorItem
   - ErrorResponse
+  - IntentTarget
   - K8SPatchOp
   - OverlayState
   - Resource
   - ResourceHistoryEntry
   - StatusDetails
   - TopoAttrMetadata
+  - TopoAttribute
+  - TopoBoolExpression
+  - TopoBoolLiteral
   - TopoElemMetadata
-  - TopoLinkEndpoint
+  - TopoEndpointBoolExpression
+  - TopoField
+  - TopoFixedBoolExpression
+  - TopoLabelSelector
+  - TopoLiteralStatusOrBadge
+  - TopoLiteralValue
+  - TopoLogicalExpression
   - TopoNodeGrouping
   - TopoOverlayEndpoint
   - TopoOverlayEndpointState
   - TopoOverlayLink
+  - TopoOverlayLinkGroup
+  - TopoOverlayLinkGroupEndpoint
   - TopoOverlayLinkState
   - TopoOverlayNode
+  - TopoOverlayNodeOrGroup
   - TopoOverlayNodeState
+  - TopoOverlayValue
   - TopoSchema
+  - TopoStateFilter
+  - TopoValue
+  - TopoValueExpression
   - Topology
+  - WorkflowIdentifier
+  - WorkflowInputDataElem
   - com.nokia.eda.topologies.v1alpha1.DeviationOverlay_DeletedResourceEntry
+  - com.nokia.eda.topologies.v1alpha1.DeviationOverlay_alarms
+  - com.nokia.eda.topologies.v1alpha1.DeviationOverlay_deviations
   - com.nokia.eda.topologies.v1alpha1.DeviationOverlay_metadata
   - com.nokia.eda.topologies.v1alpha1.LldpOverlay_DeletedResourceEntry
+  - com.nokia.eda.topologies.v1alpha1.LldpOverlay_alarms
+  - com.nokia.eda.topologies.v1alpha1.LldpOverlay_deviations
   - com.nokia.eda.topologies.v1alpha1.LldpOverlay_metadata
+  - com.nokia.eda.topologies.v1alpha1.NetworkTopology_alarms
+  - com.nokia.eda.topologies.v1alpha1.NetworkTopology_deviations
+  - com.nokia.eda.topologies.v1alpha1.NetworkTopology_metadata
   - com.nokia.eda.topologies.v1alpha1.TopologyGrouping_DeletedResourceEntry
+  - com.nokia.eda.topologies.v1alpha1.TopologyGrouping_alarms
+  - com.nokia.eda.topologies.v1alpha1.TopologyGrouping_deviations
   - com.nokia.eda.topologies.v1alpha1.TopologyGrouping_metadata
   - com.nokia.eda.topologies.v1alpha1.Topology_DeletedResourceEntry
+  - com.nokia.eda.topologies.v1alpha1.Topology_alarms
+  - com.nokia.eda.topologies.v1alpha1.Topology_deviations
   - com.nokia.eda.topologies.v1alpha1.Topology_metadata
   - com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay_DeletedResourceEntry
+  - com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay_alarms
+  - com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay_deviations
   - com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay_metadata

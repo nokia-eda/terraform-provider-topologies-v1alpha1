@@ -22,7 +22,9 @@ description: |-
 
 ### Optional
 
+- `alarms` (Attributes) (see [below for nested schema](#nestedatt--alarms))
 - `api_version` (String)
+- `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `name` (String) name of the LldpOverlay
 - `status` (Attributes) LldpOverlayStatus defines the observed state of LldpOverlay (see [below for nested schema](#nestedatt--status))
@@ -38,6 +40,7 @@ Optional:
 
 - `annotations` (Map of String)
 - `labels` (Map of String)
+- `namespace` (String)
 
 
 <a id="nestedatt--spec"></a>
@@ -64,6 +67,25 @@ Required:
 - `name` (String) The name of the resource which published the topology this overlay is extending.
 - `version` (String) The version of the application which published the topology this overlay is extending.
 
+
+
+<a id="nestedatt--alarms"></a>
+### Nested Schema for `alarms`
+
+Optional:
+
+- `critical` (Number)
+- `major` (Number)
+- `minor` (Number)
+- `warning` (Number)
+
+
+<a id="nestedatt--deviations"></a>
+### Nested Schema for `deviations`
+
+Optional:
+
+- `count` (Number)
 
 
 <a id="nestedatt--status"></a>

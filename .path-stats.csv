@@ -11,7 +11,9 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name},PATCH,Patch,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name},PUT,com.nokia.eda.topologies.v1alpha1.DeviationOverlay,deviation_overlay,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays,DELETE,com.nokia.eda.topologies.v1alpha1.LldpOverlayList,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays,GET,com.nokia.eda.topologies.v1alpha1.LldpOverlayList,lldp_overlay_list,true,true,false
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays,POST,com.nokia.eda.topologies.v1alpha1.LldpOverlay,lldp_overlay,true,false,true
@@ -21,7 +23,9 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name},PATCH,Patch,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name},PUT,com.nokia.eda.topologies.v1alpha1.LldpOverlay,lldp_overlay,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologies,DELETE,com.nokia.eda.topologies.v1alpha1.TopologyList,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologies,GET,com.nokia.eda.topologies.v1alpha1.TopologyList,topology_list,true,true,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologies,POST,com.nokia.eda.topologies.v1alpha1.Topology,topology,true,false,true
@@ -31,7 +35,9 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name},PATCH,Patch,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name},PUT,com.nokia.eda.topologies.v1alpha1.Topology,topology,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings,DELETE,com.nokia.eda.topologies.v1alpha1.TopologyGroupingList,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings,GET,com.nokia.eda.topologies.v1alpha1.TopologyGroupingList,topology_grouping_list,true,true,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings,POST,com.nokia.eda.topologies.v1alpha1.TopologyGrouping,topology_grouping,true,false,true
@@ -41,7 +47,9 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name},PATCH,Patch,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name},PUT,com.nokia.eda.topologies.v1alpha1.TopologyGrouping,topology_grouping,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays,DELETE,com.nokia.eda.topologies.v1alpha1.TrafficRateOverlayList,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays,GET,com.nokia.eda.topologies.v1alpha1.TrafficRateOverlayList,traffic_rate_overlay_list,true,true,false
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays,POST,com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay,traffic_rate_overlay,true,false,true
@@ -51,4 +59,17 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name},PATCH,Patch,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name},PUT,com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay,traffic_rate_overlay,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}/_topology,POST,K8STopologyRequest,,false,false,false
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies,GET,com.nokia.eda.topologies.v1alpha1.NetworkTopologyList,network_topology_list,true,true,false
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies,POST,com.nokia.eda.topologies.v1alpha1.NetworkTopology,network_topology,true,false,true
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name},DELETE,,network_topology,true,false,true
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name},GET,com.nokia.eda.topologies.v1alpha1.NetworkTopology,network_topology,true,true,true
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}/_artifacts,GET,,,false,false,false
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}/_artifacts/{artifact},GET,,,false,false,false
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}/_input,GET,WorkflowGetInputsRespElem,workflow_get_inputs_resp_elem,true,true,false
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}/_input,PUT,WorkflowInputData,,false,false,false
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}/_logs,GET,,,false,false,false
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}/_terminate,PUT,,,false,false,false
+/workflows/v1/topologies.eda.nokia.com/v1alpha1/networktopologies,GET,com.nokia.eda.topologies.v1alpha1.NetworkTopologyList,,false,false,false

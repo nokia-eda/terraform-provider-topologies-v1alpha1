@@ -27,6 +27,16 @@ data_sources:
       path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays
       method: GET
 
+  network_topology:
+    read:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}
+      method: GET
+
+  network_topology_list:
+    read:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies
+      method: GET
+
   resource_list:
     read:
       path: /apps/topologies.eda.nokia.com/v1alpha1
@@ -62,6 +72,11 @@ data_sources:
       path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays
       method: GET
 
+  workflow_get_inputs_resp_elem:
+    read:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}/_input
+      method: GET
+
 resources:
   deviation_overlay:
     create:
@@ -89,6 +104,17 @@ resources:
       method: PUT
     delete:
       path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}
+      method: DELETE
+
+  network_topology:
+    create:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies
+      method: POST
+    read:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}
+      method: GET
+    delete:
+      path: /workflows/v1/topologies.eda.nokia.com/v1alpha1/namespaces/{namespace}/networktopologies/{name}
       method: DELETE
 
   topology:
