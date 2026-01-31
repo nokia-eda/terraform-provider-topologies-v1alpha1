@@ -8,7 +8,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/_deleted,GET,com.nokia.eda.topologies.v1alpha1.DeviationOverlay_DeletedResources,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name},DELETE,Status,deviation_overlay,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name},GET,com.nokia.eda.topologies.v1alpha1.DeviationOverlay,deviation_overlay,true,true,true
-/apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name},PATCH,Patch,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name},PATCH,com.nokia.eda.topologies.v1alpha1.DeviationOverlay,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name},PUT,com.nokia.eda.topologies.v1alpha1.DeviationOverlay,deviation_overlay,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -20,7 +20,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/_deleted,GET,com.nokia.eda.topologies.v1alpha1.LldpOverlay_DeletedResources,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name},DELETE,Status,lldp_overlay,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name},GET,com.nokia.eda.topologies.v1alpha1.LldpOverlay,lldp_overlay,true,true,true
-/apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name},PATCH,Patch,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name},PATCH,com.nokia.eda.topologies.v1alpha1.LldpOverlay,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name},PUT,com.nokia.eda.topologies.v1alpha1.LldpOverlay,lldp_overlay,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -32,7 +32,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/_deleted,GET,com.nokia.eda.topologies.v1alpha1.Topology_DeletedResources,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name},DELETE,Status,topology,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name},GET,com.nokia.eda.topologies.v1alpha1.Topology,topology,true,true,true
-/apps/topologies.eda.nokia.com/v1alpha1/topologies/{name},PATCH,Patch,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/topologies/{name},PATCH,com.nokia.eda.topologies.v1alpha1.Topology,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name},PUT,com.nokia.eda.topologies.v1alpha1.Topology,topology,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -44,7 +44,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/_deleted,GET,com.nokia.eda.topologies.v1alpha1.TopologyGrouping_DeletedResources,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name},DELETE,Status,topology_grouping,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name},GET,com.nokia.eda.topologies.v1alpha1.TopologyGrouping,topology_grouping,true,true,true
-/apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name},PATCH,Patch,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name},PATCH,com.nokia.eda.topologies.v1alpha1.TopologyGrouping,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name},PUT,com.nokia.eda.topologies.v1alpha1.TopologyGrouping,topology_grouping,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -56,7 +56,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/_deleted,GET,com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay_DeletedResources,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name},DELETE,Status,traffic_rate_overlay,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name},GET,com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay,traffic_rate_overlay,true,true,true
-/apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name},PATCH,Patch,,false,false,false
+/apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name},PATCH,com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name},PUT,com.nokia.eda.topologies.v1alpha1.TrafficRateOverlay,traffic_rate_overlay,true,false,true
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}/_targets,GET,IntentTargets,,false,false,false

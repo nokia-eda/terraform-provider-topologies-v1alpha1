@@ -37,23 +37,6 @@ k8_s_topology_request:
       path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}/_topology
       method: POST
 
-patch:
-  - update:
-      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}
-      method: PATCH
-  - update:
-      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}
-      method: PATCH
-  - update:
-      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}
-      method: PATCH
-  - update:
-      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}
-      method: PATCH
-  - update:
-      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}
-      method: PATCH
-
 resource_history:
   - read:
       path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}/_revs
@@ -135,6 +118,9 @@ com.nokia.eda.topologies.v1alpha1.deviation_overlay:
   - update:
       path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}
       method: PUT
+  - update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/deviationoverlays/{name}
+      method: PATCH
 
 com.nokia.eda.topologies.v1alpha1.deviation_overlay_list:
   - read:
@@ -159,6 +145,9 @@ com.nokia.eda.topologies.v1alpha1.lldp_overlay:
   - update:
       path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}
       method: PUT
+  - update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/lldpoverlays/{name}
+      method: PATCH
 
 com.nokia.eda.topologies.v1alpha1.lldp_overlay_list:
   - read:
@@ -199,6 +188,9 @@ com.nokia.eda.topologies.v1alpha1.topology:
   - update:
       path: /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}
       method: PUT
+  - update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologies/{name}
+      method: PATCH
 
 com.nokia.eda.topologies.v1alpha1.topology_grouping:
   - create:
@@ -210,6 +202,9 @@ com.nokia.eda.topologies.v1alpha1.topology_grouping:
   - update:
       path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}
       method: PUT
+  - update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/topologygroupings/{name}
+      method: PATCH
 
 com.nokia.eda.topologies.v1alpha1.topology_grouping_list:
   - read:
@@ -247,6 +242,9 @@ com.nokia.eda.topologies.v1alpha1.traffic_rate_overlay:
   - update:
       path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}
       method: PUT
+  - update:
+      path: /apps/topologies.eda.nokia.com/v1alpha1/trafficrateoverlays/{name}
+      method: PATCH
 
 com.nokia.eda.topologies.v1alpha1.traffic_rate_overlay_list:
   - read:
@@ -263,8 +261,8 @@ com.nokia.eda.topologies.v1alpha1.traffic_rate_overlay_deleted_resources:
 
 totalPaths: 41
 totalSchemas: 91
-usedSchemas: 28
-unusedSchemas: 63
+usedSchemas: 27
+unusedSchemas: 64
 unusedSchemaList:
   - AppGroupVersion
   - ErrorIndex
@@ -273,6 +271,7 @@ unusedSchemaList:
   - IntentTarget
   - K8SPatchOp
   - OverlayState
+  - Patch
   - Resource
   - ResourceHistoryEntry
   - StatusDetails
